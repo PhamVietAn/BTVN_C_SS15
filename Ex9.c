@@ -3,21 +3,21 @@
 
 int main(){
     char chuoi[] = "pham viet an";
-    char ket_qua[100];
-    char ky_tu;
+    char ketQua[100];
+    char index;
     int j = 0;
     printf("chuoi ky tu ban dau: %s\n", chuoi);
     printf("Nhap ky tu can xoa: ");
-    scanf("%c", &ky_tu);
+    scanf("%c", &index);
 
-    for (int i = 0; i < strlen(chuoi); i++){
-        if (chuoi[i] != ky_tu) {
-            ket_qua[j++] = chuoi[i];
+    for(int i = 0; i < strlen(chuoi); i++){
+        if(chuoi[i] != index) {
+            ketQua[j++] = chuoi[i];
         }
     }
-    ket_qua[j] = '\0';
+    ketQua[j] = '\0';
 
-    printf("Ket qua sau khi xoa: %s\n", ket_qua);
+    printf("Ket qua sau khi xoa: %s\n", ketQua);
 
     return 0;
 }
